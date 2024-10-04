@@ -44,10 +44,10 @@ const RequestQuote = () => {
     console.log("res:", res);
     if (res.status === 200) {
       successNotification(res.data.message);
-      // resetForm();
-      // setTimeout(() => {
-      //   router.push("/");
-      // }, 3000);
+      resetForm();
+      setTimeout(() => {
+        router.push("/");
+      }, 3000);
     } else {
       errorNotification(res.data.error);
     }
@@ -128,7 +128,6 @@ const RequestQuote = () => {
                       onChange={handleUploadDoc}
                       type="file"
                       className="contact-input leftRight request-file"
-                      accept="image/*"
                       style={{
                         border: "1px dashed #ffffff",
                       }}
