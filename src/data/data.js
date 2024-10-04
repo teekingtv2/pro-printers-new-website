@@ -31,16 +31,6 @@ export const menuItems = [
         link: 'label-sticker',
         img: 'label-sticker.jpg',
       },
-      {
-        name: 'Estate Labels',
-        link: 'estate-labels',
-        img: 'estate-labels.png',
-      },
-      {
-        name: 'Product Stickers',
-        link: 'product-stickers',
-        img: 'product-stickers.png',
-      },
     ],
   },
   {
