@@ -1,0 +1,9 @@
+/* About */
+.about-img-1 {
+  animation: dancingSlide 3s linear infinite;
+  box-shadow: 5px 6px 3px 6px #86c2f34d;
+}
+
+.about-card-1 {
+  animation: dancingSlide 3s linear infinite;
+}

@@ -1,0 +1,232 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-[#ffffff] text-[#222222] tracking-wide overflow-x-hidden w-[100vw];
+    /* display: flex;
+    flex-direction: column; */
+  }
+
+  ::-webkit-scrollbar {
+    width: 7px;
+    background: transparent;
+  }
+  ::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 5px grey; */
+    border-radius: 0px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #0c0c0c;
+    border-radius: 10px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+  }
+  h1 {
+    @apply text-4xl sm:text-5xl md:text-6xl;
+  }
+  h2 {
+    @apply text-3xl sm:text-4xl;
+  }
+
+  li {
+    @apply cursor-pointer;
+  }
+
+  p {
+    @apply font-light leading-[1.59rem];
+  }
+
+  .contact-input {
+    @apply border rounded-lg py-2 px-3 w-full bg-white;
+    box-shadow: 4px 4px 10px #00000017;
+  }
+  select.contact-input option,
+  select.contact-input option:checked {
+    @apply text-[#03194a] text-[14px];
+  }
+
+  .contact-input::placeholder,
+  select.contact-input {
+    /* color: #cacaca; */
+    font-size: 14px;
+    font-weight: 400;
+  }
+  .contact-card {
+    @apply border rounded-lg py-2 px-3 w-full bg-transparent;
+    border: 1px dashed #00000049;
+    box-shadow: 4px 4px 10px #0000002d;
+  }
+}
+
+.textBlueGradient {
+  background: linear-gradient(to right, #7502d0, #0297fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.search::placeholder {
+  color: #000;
+  font-size: 13px;
+}
+
+.cardHoverShadow:hover {
+  box-shadow: 3px 3px 8px #0c0c0c18;
+}
+
+.active {
+  color: #0047ab;
+  font-weight: 700 !important;
+}
+
+.btnn {
+  padding: 10px 20px;
+  border-radius: 13px;
+}
+.btnn:hover {
+  margin-top: -3px;
+  margin-left: -3px;
+}
+
+.readMoreBtnn {
+  background: linear-gradient(to bottom, #0047ab, #fff, #ffba21);
+  color: #000;
+}
+.readMoreBtnn:hover {
+  border: 1px solid #0047ab;
+  background: #0047ab;
+  color: #ffffff;
+  transition: 0.5s ease-in;
+}
+
+.primaryBtnn {
+  background: #0047ab;
+  color: #ffffff;
+}
+.primaryBtnn:hover {
+  border: 1px solid #0047ab;
+  color: #0047ab;
+  background: transparent;
+  transition: 0.3s ease-in;
+}
+
+/* global blue: 5271FB */
+.secondaryBtnn {
+  color: #fff !important;
+  border: 2px solid #fff;
+  background: transparent;
+  transition: 0.3s ease-in;
+}
+.secondaryBtnn:hover {
+  background: #fff;
+  border: 0;
+  color: #0047ab !important;
+}
+
+.navLink:hover {
+  color: #0047ab;
+  font-weight: normal !important;
+}
+
+.boxShadow-sm {
+  box-shadow: 4px 4px 10px #000000e5;
+  /* border: 1px solid #000; */
+}
+
+.boxShadowBlue-sm {
+  box-shadow: 1px 1px 4px 1px #86c2f3;
+}
+
+.colour-banner {
+  width: 100% !important;
+  background: #02153d;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+.blue-border {
+  border: 1px solid #0005ca;
+  box-shadow: 5px 6px 3px 6px #1f1f1f41;
+}
+
+.card {
+  box-shadow: 2px 3px 10px #0c0c0c25;
+  border-radius: 10px;
+  padding: 10px;
+}
+.home-gallery-card {
+  box-shadow: 2px 3px 3px 10px #ffffff28;
+  border-radius: 10px;
+}
+
+.footer .social-icon a {
+  width: 42px;
+  height: 42px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  line-height: 1;
+  border: 1px solid rgba(71, 71, 71, 0.5);
+}
+.footer .social-icon a::before {
+  content: '';
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  background-color: #ffffff;
+  border-radius: 50%;
+  transform: scale(0);
+  transition: 0.3s ease-in-out;
+}
+.footer .social-icon a:hover::before {
+  transform: scale(1);
+}
+
+.footer .social-icon a:hover span {
+  filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg)
+    brightness(95%) contrast(86%);
+}
+
+/* Topbar */
+.topBarBg {
+  background-image: linear-gradient(to right, #7502d0, #0297fd);
+}
+.scrolling-service {
+  background-image: linear-gradient(to right, #0047ab57, #ffb92144);
+}
+.homeReadAboutBg {
+  background-image: url(/images/home/read-about-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.request-file::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.request-file::before {
+  content: 'Add info doc';
+  color: #999;
+  font-size: 13.5px;
+}
