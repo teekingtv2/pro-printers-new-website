@@ -47,12 +47,12 @@ const ContactBody = () => {
       <div className="py-[70px] md:pt-[100px] md:pb-[100px] container">
         <div className="animate__slower animate__animated animate__zoomIn mx-auto flex flex-col items-center gap-3 mb-10">
           <h1 className="w-full md:w-[50%] text-[#000] text-[30px] md:text-[38px] font-semibold mb-5 leading-[35px] md:leading-[45px] text-center">
-            <span className="text-[#0047AB]"> Get in touch </span> with us
+            <span className="text-[#0047AB]">Get in touch </span> with us
           </h1>
           <p className="px-5 md:px-0 w-full md:w-[70%] text-center text-13px">
             Get in touch to discuss your employee wellbeing needs today. Please
-            give us a call, drop us an email or fill out the contact form and
-            we'll get back to you.
+            give us a call, drop us an email or fill out the contact form and we
+            will get back to you.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 px-5 md:px-0 items-center">
