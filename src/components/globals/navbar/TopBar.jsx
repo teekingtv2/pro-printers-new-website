@@ -1,6 +1,6 @@
-import Head from 'next/head';
-import React from 'react';
-import { FaMailBulk, FaPhone } from 'react-icons/fa';
+import Head from "next/head";
+import React from "react";
+import { FaMailBulk, FaPhone } from "react-icons/fa";
 
 const TopBar = () => {
   return (
@@ -17,7 +17,7 @@ const TopBar = () => {
         />
       </Head>
       <div className="w-full bg-[#FFBA21]">
-        <div className="container py-2 px-3 md:px-0 flex justify-between items-center text-[#fff] font-normal md:font-semibold text-[12px] md:text-[14px]">
+        <div className="container py-2 px-3 md:px-0 flex justify-between items-center text-[#fff] font-medium md:font-semibold text-[12px] md:text-[14px]">
           <p className="">Announcement</p>
           {/* <p className="w-[80%] p-0 m-0"> */}
           <marquee behavior="" direction="" className="w-[70%] p-0 m-0">
