@@ -1,32 +1,31 @@
-'use client';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import React, { useEffect, useState } from 'react';
-import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { IoMdArrowDropdown } from 'react-icons/io';
-import { FaTwitter, FaFacebook, FaInstagram } from 'react-icons/fa';
-import { menuItems } from '../../../data/data';
+"use client";
+import Link from "next/link";
+import { useRouter } from "next/navigation";
+import React, { useEffect, useState } from "react";
+import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
+import { IoMdArrowDropdown } from "react-icons/io";
+import { FaTwitter, FaFacebook, FaInstagram } from "react-icons/fa";
+import { menuItems } from "../../../data/data";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
-  const [linkColor, setLinkColor] = useState('#000');
-  const [activeLink, setActiveLink] = useState('home');
+  const [linkColor, setLinkColor] = useState("#000");
+  const [activeLink, setActiveLink] = useState("home");
   const router = useRouter();
 
-  const [itemTitle, setItemTitle] = useState('');
-  const [itemLink, setItemLink] = useState('');
+  const [itemTitle, setItemTitle] = useState("");
+  const [itemLink, setItemLink] = useState("");
   const [selectedItem, setSelectedItem] = useState(null);
-
 
   const handleNavToggle = () => {
     setNav(!nav);
   };
 
   useEffect(() => {
-    if (router.asPath !== '/') {
-      setLinkColor('#000');
+    if (router.asPath !== "/") {
+      setLinkColor("#000");
     } else {
-      setLinkColor('#000');
+      setLinkColor("#000");
     }
   }, [router]);
 
@@ -34,16 +33,12 @@ const Navbar = () => {
     setActiveLink(value);
   };
 
-  const updateLinkItem = (title) =>{
-    setItemTitle(title)
-    const selectedIt = menuItems.filter(item => item.title === title);
+  const updateLinkItem = (title) => {
+    setItemTitle(title);
+    const selectedIt = menuItems.filter((item) => item.title === title);
     setSelectedItem(selectedIt[0]);
     setItemLink(selectedIt[0].link);
-    console.log('itemTitle', itemTitle)
-    console.log('itemLink', itemLink)
-    console.log('selectedIt', selectedIt)
-    console.log('selectedItem', selectedItem)
-  }
+  };
 
   return (
     // <div className="fixed top-[35px] w-full shadow-md z-[100] px-5 md:px-0 bg-[#fff] ">
@@ -56,15 +51,16 @@ const Navbar = () => {
               className="hidden md:flex justify-between items-center text-[13px] font-medium"
             >
               <Link
-                href="/"
-                className={activeLink === 'All Products' ? 'active' : ''}
-                onClick={() => onUpdateActiveLink('All Products')}
+                href="/all-products"
+                className={activeLink === "All Products" ? "active" : ""}
+                onClick={() => onUpdateActiveLink("All Products")}
               >
                 <li className="navLink">All Products</li>
               </Link>
 
-              {
-                menuItems.map((item, i) => (
+              {menuItems
+                .filter((ele) => ele.title !== "Others")
+                .map((item, i) => (
                   <li
                     key={i}
                     onMouseEnter={() => updateLinkItem(item.title)}
@@ -73,12 +69,11 @@ const Navbar = () => {
                     <span>{item.title}</span>
                     <IoMdArrowDropdown size={20} />
                   </li>
-                ))
-              }
+                ))}
               <Link
                 href="/packaging"
-                className={activeLink === 'packaging' ? 'active' : ''}
-                onClick={() => onUpdateActiveLink('projects')}
+                className={activeLink === "packaging" ? "active" : ""}
+                onClick={() => onUpdateActiveLink("projects")}
               >
                 <li className="navLink">Packaging</li>
               </Link>
@@ -91,14 +86,18 @@ const Navbar = () => {
 
         {/* Mobile menu */}
         <div
-          className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 ' : ''}
-          style={{ zIndex: '11111' }}
+          className={
+            nav
+              ? "md:hidden fixed left-0 top-0 w-full h-screen bg-black/70 "
+              : ""
+          }
+          style={{ zIndex: "11111" }}
         >
           <div
             className={
               nav
-                ? 'fixed left-0 top-0 ease-in duration-500 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#fff] p-10 '
-                : 'fixed left-[-120%] top-0 ease-in duration-500 p-10'
+                ? "fixed left-0 top-0 ease-in duration-500 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#fff] px-10 py-5"
+                : "fixed left-[-120%] top-0 ease-in duration-500 p-10"
             }
           >
             <div>
@@ -124,60 +123,51 @@ const Navbar = () => {
                 </p>
               </div>
             </div>
-            <div className="py-4 flex flex-col">
+            <div className="py-4 flex flex-col g-0">
               <ul className="uppercase">
-                <Link
-                  onClick={() => setNav(false)}
-                  href="/"
-                  className={activeLink === 'home' ? 'active' : 'text-gray-900'}
-                >
-                  <li className="py-4 text-sm">Home</li>
-                </Link>
+                {menuItems.map((item, i) => (
+                  <Link
+                    onClick={() => setNav(false)}
+                    href={`/services/${item.link}`}
+                    className={
+                      activeLink === item.link ? "active" : "text-gray-900"
+                    }
+                    key={i}
+                  >
+                    <li className="py-2 text-sm">{item.title}</li>
+                  </Link>
+                ))}
                 <Link
                   onClick={() => setNav(false)}
                   href="/about"
-                  className={activeLink === 'about' ? 'active' : 'text-gray-900'}
+                  className={
+                    activeLink === "about" ? "active" : "text-gray-900"
+                  }
                 >
-                  <li className="py-4 text-sm">About</li>
+                  <li className="py-2 text-sm">About</li>
                 </Link>
-                <Link
-                  onClick={() => setNav(false)}
-                  href="/projects"
-                  className={activeLink === 'projects' ? 'active' : 'text-gray-900'}
-                >
-                  <li className="py-4 text-sm">Projects</li>
-                </Link>
-                <Link
-                  onClick={() => setNav(false)}
-                  href="/services"
-                  className={activeLink === 'services' ? 'active' : 'text-gray-900'}
-                >
-                  <li className="py-4 text-sm">Services</li>
-                </Link>
+
                 <Link
                   onClick={() => setNav(false)}
                   href="/contact"
-                  className={activeLink === 'contact' ? 'active' : 'text-gray-900'}
+                  className={
+                    activeLink === "contact" ? "active" : "text-gray-900"
+                  }
                 >
-                  <li className="py-4 text-sm">Contact</li>
+                  <li className="py-2 text-sm">Contact</li>
                 </Link>
                 <Link
                   onClick={() => setNav(false)}
                   href="/blog"
-                  className={activeLink === 'blog' ? 'active' : 'text-gray-900'}
+                  className={activeLink === "blog" ? "active" : "text-gray-900"}
                 >
                   <li className="py-4 text-sm">News & Articles</li>
                 </Link>
-                <Link
-                  onClick={() => setNav(false)}
-                  href="/register"
-                  className={activeLink === 'register' ? 'active' : 'text-gray-900'}
-                >
-                  <li className="py-4 text-sm">Register</li>
-                </Link>
               </ul>
               <div className="pt-40">
-                <p className="uppercase tracking-widest text-[#000] text-center">Connect with us</p>
+                <p className="uppercase tracking-widest text-[#000] text-center">
+                  Connect with us
+                </p>
                 <div className="flex items-center justify-center gap-5 my-4 w-full sm:w-[80%] text-gray-900">
                   <Link
                     href="https://x.com/"
@@ -204,27 +194,23 @@ const Navbar = () => {
         </div>
       </div>
 
-      {
-        selectedItem && (
+      {selectedItem && (
+        <div className="absolute w-[100vw] flex z-40 bg-transparent ease-in duration-300">
           <div
-            className='absolute w-[100vw] flex z-40 bg-transparent ease-in duration-300'
+            className=" container flex items-center justify-center gap-8 px-4 pt-5 pb-10 bg-white hover "
+            style={{ border: "1px solid #bbb" }}
+            onMouseLeave={() => {
+              setSelectedItem(false);
+            }}
           >
-            <div
-              className=" container flex items-center justify-center gap-8 px-4 pt-5 pb-10 bg-white hover "
-              style={{ border: '1px solid #bbb' }}
-              onMouseLeave={() => {
-                setSelectedItem(false);
-              }}
-            >
-              {
-                selectedItem && selectedItem.children.map((it, i) => {
-                  console.log('image', `/images/services/${it.img}`)
-                  return (
-                
+            {selectedItem &&
+              selectedItem.children.map((it, i) => {
+                console.log("image", `/images/services/${it.img}`);
+                return (
                   <Link
                     href={`/services/${itemLink}/${it.link}`}
                     className={`flex flex-col items-center gap-3 px-7`}
-                    style={{ borderRight: '1px solid #bbb' }}
+                    style={{ borderRight: "1px solid #bbb" }}
                     key={i}
                   >
                     <div className="h-[100px] w-[100px]">
@@ -234,18 +220,21 @@ const Navbar = () => {
                         className="h-[100px] w-[100px] hover:scale-110 ease-in duration-300"
                       />
                     </div>
-                    <p className="leading-4 text-[14px] text-center">{it.name}</p>
+                    <p className="leading-4 text-[14px] text-center">
+                      {it.name}
+                    </p>
                   </Link>
-                )})
-              }
-              <Link href={`/services/${itemLink}`} className="btnn readMoreBtnn flex items-center font-medium uppercase">
-                Read More
-              </Link>
-            </div>
+                );
+              })}
+            <Link
+              href={`/services/${itemLink}`}
+              className="btnn readMoreBtnn flex items-center font-medium uppercase"
+            >
+              Read More
+            </Link>
           </div>
-        )
-      }
-
+        </div>
+      )}
     </div>
   );
 };

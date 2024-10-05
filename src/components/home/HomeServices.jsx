@@ -27,7 +27,7 @@ const HomeServices = () => {
           <img
             src="/images/services/uv-direct.jpg"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">Direct UV</h2>
         </Link>
@@ -38,7 +38,7 @@ const HomeServices = () => {
           <img
             src="/images/services/uv-dtf.jpg"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">UV DTF (Sticker)</h2>
         </Link>
@@ -49,7 +49,7 @@ const HomeServices = () => {
           <img
             src="/images/services/notepads.jpg"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">NotePads</h2>
         </Link>
@@ -60,7 +60,7 @@ const HomeServices = () => {
           <img
             src="/images/services/mugs.jpg"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">Mugs</h2>
         </Link>
@@ -71,7 +71,7 @@ const HomeServices = () => {
           <img
             src="/images/services/clocth-tags.png"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">Cloth Tags</h2>
         </Link>
@@ -80,9 +80,9 @@ const HomeServices = () => {
           className="col-span-1 flex flex-col gap-2 items-center text-center"
         >
           <img
-            src="/images/services/business-card.jpg"
+            src="/images/services/transparent-business-cards.jpg"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">
             Transparent Business Cards
@@ -95,40 +95,40 @@ const HomeServices = () => {
           <img
             src="/images/services/rollup-stand.png"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">Rollup Stand</h2>
         </Link>
         <Link
-          href="/services/gift-items/corporate-gift-set"
+          href="/services/others/carrier-bags"
           className="col-span-1 flex flex-col gap-2 items-center text-center"
         >
           <img
             src="/images/services/carrier-bags.jpg"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">Carrier Bags</h2>
         </Link>
         <Link
-          href=""
+          href="/services/others/tote-bags"
           className="col-span-1 flex flex-col gap-2 items-center text-center"
         >
           <img
             src="/images/services/tote-bags.jpg"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">Tote Bags </h2>
         </Link>
         <Link
-          href=""
+          href="/services/others/hand-fan"
           className="col-span-1 flex flex-col gap-2 items-center text-center"
         >
           <img
             src="/images/services/hand-fan.png"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">Hand fan</h2>
         </Link>
@@ -139,7 +139,7 @@ const HomeServices = () => {
           <img
             src="/images/services/t-shrit.png"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">T Shirts</h2>
         </Link>
@@ -148,11 +148,11 @@ const HomeServices = () => {
           className="col-span-1 flex flex-col gap-2 items-center text-center"
         >
           <img
-            src="/images/services/id-card.webp"
+            src="/images/services/lanyards.jpg"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
-          <h2 className="text-[18px] font-semibold">ID Cards/Lanyards</h2>
+          <h2 className="text-[18px] font-semibold">Lanyards</h2>
         </Link>
         <Link
           href="/services/apparels/face-cap"
@@ -161,18 +161,18 @@ const HomeServices = () => {
           <img
             src="/images/services/face-cap.jpg"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">Face Caps </h2>
         </Link>
         <Link
-          href=""
+          href="/services/others/pop-socket"
           className="col-span-1 flex flex-col gap-2 items-center text-center"
         >
           <img
-            src="/images/home/services/mugs.webp"
+            src="/images/services/popsocket.jpg"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">Pop Socket</h2>
         </Link>
@@ -183,7 +183,7 @@ const HomeServices = () => {
           <img
             src="/images/services/hoodie-2.jpg"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">Hoodie</h2>
         </Link>
@@ -194,7 +194,7 @@ const HomeServices = () => {
           <img
             src="/images/services/vehicle-branding.jpg"
             alt=""
-            className="rounded-xl mb-2 h-[250px] w-[250px]"
+            className="rounded-xl mb-2 h-[250px] w-[250px] hover:scale-110 ease-in duration-300"
           />
           <h2 className="text-[18px] font-semibold">Vehicle Wrap</h2>
         </Link>

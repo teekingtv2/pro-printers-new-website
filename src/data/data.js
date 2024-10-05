@@ -164,7 +164,7 @@ export const menuItems = [
       {
         name: 'Business Card',
         link: 'business-card',
-        img: 'business-card.jpg',
+        img: 'transparent-business-cards.jpg',
       },
       {
         name: 'Letter Head',
@@ -217,6 +217,33 @@ export const menuItems = [
         name: 'Neon Sign',
         link: 'neon-sign',
         img: 'neon-sign.jpg',
+      },
+    ],
+  },
+  {
+    title: 'Others',
+    link: 'others',
+    img: 'signs-displays.png',
+    children: [
+      {
+        name: 'Carrier Bags',
+        link: 'carrier-bags',
+        img: 'carrier-bags.jpg',
+      },
+      {
+        name: 'Tote Bags',
+        link: 'tote-bags',
+        img: 'tote-bags.jpg',
+      },
+      {
+        name: 'Hand Fan',
+        link: 'hand-fan',
+        img: 'hand-fan.png',
+      },
+      {
+        name: 'Pop Socket',
+        link: 'pop-socket',
+        img: 'popsocket.jpg',
       },
     ],
   },
