@@ -96,9 +96,10 @@ const Navbar = () => {
           <div
             className={
               nav
-                ? "fixed left-0 top-0 ease-in duration-500 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#fff] px-10 py-5"
-                : "fixed left-[-120%] top-0 ease-in duration-500 p-10"
+                ? "fixed left-0 top-0 ease-in duration-500 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-[#fff] px-10 py-5 "
+                : "fixed left-[-120%] top-0 ease-in duration-500 px-10 py-5 "
             }
+            style={{ overflowY: "scroll" }}
           >
             <div>
               <div className="flex w-full justify-between items-center">
@@ -118,7 +119,7 @@ const Navbar = () => {
                 </div>
               </div>
               <div className="border-b border-gray-300 my-6">
-                <p className=" py-2 text-[#0047ab] leading-3 font-semibold">
+                <p className=" py-2 text-[#0047ab] leading-5 font-semibold">
                   Pro Printers Agency LTD
                 </p>
               </div>
@@ -134,7 +135,7 @@ const Navbar = () => {
                     }
                     key={i}
                   >
-                    <li className="py-2 text-sm">{item.title}</li>
+                    <li className="py-3 text-sm">{item.title}</li>
                   </Link>
                 ))}
                 <Link
@@ -144,7 +145,7 @@ const Navbar = () => {
                     activeLink === "about" ? "active" : "text-gray-900"
                   }
                 >
-                  <li className="py-2 text-sm">About</li>
+                  <li className="py-3 text-sm">About</li>
                 </Link>
 
                 <Link
@@ -154,14 +155,14 @@ const Navbar = () => {
                     activeLink === "contact" ? "active" : "text-gray-900"
                   }
                 >
-                  <li className="py-2 text-sm">Contact</li>
+                  <li className="py-3 text-sm">Contact</li>
                 </Link>
                 <Link
                   onClick={() => setNav(false)}
                   href="/blog"
                   className={activeLink === "blog" ? "active" : "text-gray-900"}
                 >
-                  <li className="py-2 text-sm">News & Articles</li>
+                  <li className="py-3 text-sm">News & Articles</li>
                 </Link>
               </ul>
               <div className="pt-3">
