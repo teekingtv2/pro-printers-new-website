@@ -106,7 +106,7 @@ const Navbar = () => {
                   <img
                     src="/images/logo.png"
                     alt={`${process.env.APP_NAME}`}
-                    width="75"
+                    width="100"
                     height="35"
                   />
                 </Link>
@@ -117,13 +117,13 @@ const Navbar = () => {
                   <AiOutlineClose size={25} />
                 </div>
               </div>
-              <div className="border-b border-gray-300 my-4">
-                <p className="w-[85%] md:w-[90%] py-4 text-gray-900 leading-5">
-                  {process.env.APP_NAME}
+              <div className="border-b border-gray-300 my-5">
+                <p className=" py-2 text-[#0047ab] leading-3 font-semibold">
+                  Pro Printers Agency LTD
                 </p>
               </div>
             </div>
-            <div className="py-4 flex flex-col g-0">
+            <div className="py-1 flex flex-col g-0">
               <ul className="uppercase">
                 {menuItems.map((item, i) => (
                   <Link
@@ -161,29 +161,26 @@ const Navbar = () => {
                   href="/blog"
                   className={activeLink === "blog" ? "active" : "text-gray-900"}
                 >
-                  <li className="py-4 text-sm">News & Articles</li>
+                  <li className="py-2 text-sm">News & Articles</li>
                 </Link>
               </ul>
-              <div className="pt-40">
-                <p className="uppercase tracking-widest text-[#000] text-center">
-                  Connect with us
-                </p>
+              <div className="pt-3">
                 <div className="flex items-center justify-center gap-5 my-4 w-full sm:w-[80%] text-gray-900">
                   <Link
                     href="https://x.com/"
-                    className="rounded-full shadow-md shadow-gray-900 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
+                    className="rounded-full shadow-md shadow-gray-900 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
                   >
                     <FaTwitter />
                   </Link>
                   <Link
                     href="https://instagram.com/"
-                    className="rounded-full shadow-md shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
+                    className="rounded-full shadow-md shadow-gray-500 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
                   >
                     <FaInstagram />
                   </Link>
                   <Link
                     href="https://facebook.com/"
-                    className="rounded-full shadow-md shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
+                    className="rounded-full shadow-md shadow-gray-500 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
                   >
                     <FaFacebook />
                   </Link>
