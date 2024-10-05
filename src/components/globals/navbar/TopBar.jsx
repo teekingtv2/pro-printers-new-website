@@ -17,13 +17,11 @@ const TopBar = () => {
         />
       </Head>
       <div className="w-full bg-[#FFBA21]">
-        <div className="container py-2 px-3 md:px-0 flex justify-between items-center text-[#fff] font-medium md:font-semibold text-[12px] md:text-[14px]">
-          <p className="">Announcement</p>
-          {/* <p className="w-[80%] p-0 m-0"> */}
+        <div className="container py-2 px-3 md:px-0 flex justify-between items-center text-[#fff] font-semibold md:font-semibold text-[12px] md:text-[14px]">
+          <p className="font-semibold ">Announcement</p>
           <marquee behavior="" direction="" className="w-[70%] p-0 m-0">
             Huge discount of as high as 20% off your first order!
           </marquee>
-          {/* </p> */}
         </div>
       </div>
     </>

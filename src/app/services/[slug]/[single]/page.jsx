@@ -25,7 +25,7 @@ const ServiceSingle = ({ params }) => {
             <img
               src={`/images/services/${mainItem.img}`}
               alt=""
-              className="rounded-xl mb-3 w-full"
+              className="rounded-xl mb-3 w-[85%] md:w-[90%] mx-auto md:mx-0 max-h-[300px] md:max-h-full"
             />
           </div>
           <div className="col-span-1 flex flex-col gap-2">
@@ -71,33 +71,33 @@ const ServiceSingle = ({ params }) => {
           </Link>
         </div>
 
-        <h3 className="text-[22px] uppercase mt-5 md:mt-[70px]">
+        <h3 className="text-[20px] md:text-[22px] uppercase mt-5 md:mt-[70px] mb-[-20px] md:mb-[-10px]">
           Related Products
         </h3>
 
         {parentItem && (
           <div
-            className="grid grid-cols-1 md:grid-cols-5 items-center gap-8 p-4 bg-white"
+            className="grid grid-cols-2 md:grid-cols-5 items-center gap-8 p-4 bg-white"
             style={{ border: "1px solid #ddd" }}
           >
             {parentItem.children.map((it, i) => {
               return (
                 <Link
                   href={`/services/${parentLink}/${it.link}`}
-                  className={`flex flex-col items-center gap-2 bg-[#eee] p-5`}
+                  className={`flex flex-col justify-center items-center gap-2 bg-[#eee] p-2 md:p-5 rounded-sm`}
                   key={i}
                 >
-                  <div className="h-full w-full">
+                  <div className="h-full w-full flex items-center justify-center">
                     <img
                       src={`/images/services/${it.img}`}
                       alt=""
-                      className="h-[150px] w-[150px] hover:scale-110 ease-in duration-300"
+                      className="h-[100px] md:h-[150px] w-[110px] md:w-[150px] hover:scale-110 ease-in duration-300 rounded-md"
                     />
                   </div>
                   <p className="leading-4 text-[14px] text-center">
                     {parentItem.title}
                   </p>
-                  <p className="text-[17px] font-medium leading-[1.5rem]">
+                  <p className="text-[15px] md:text-[17px] font-medium leading-[1.3rem] md:leading-[1.5rem]">
                     {it.name}
                   </p>
                 </Link>

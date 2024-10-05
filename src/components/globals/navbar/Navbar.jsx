@@ -107,7 +107,7 @@ const Navbar = () => {
                   <img
                     src="/images/logo.png"
                     alt={`${process.env.APP_NAME}`}
-                    width="100"
+                    width="110"
                     height="35"
                   />
                 </Link>
@@ -145,7 +145,7 @@ const Navbar = () => {
                     activeLink === "about" ? "active" : "text-gray-900"
                   }
                 >
-                  <li className="py-3 text-sm">About</li>
+                  <li className="py-3 text-sm">About Us</li>
                 </Link>
 
                 <Link
@@ -155,7 +155,7 @@ const Navbar = () => {
                     activeLink === "contact" ? "active" : "text-gray-900"
                   }
                 >
-                  <li className="py-3 text-sm">Contact</li>
+                  <li className="py-3 text-sm">Contact Us</li>
                 </Link>
                 <Link
                   onClick={() => setNav(false)}
