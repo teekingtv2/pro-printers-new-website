@@ -53,9 +53,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta property="og:title" content={`${process.env.APP_NAME}`} />
-        <meta name="theme-color" content="#7502d0" />
-        <meta name="msapplication-navbutton-color" content="#7502d0" />
-        <meta content="#7502d0" name="msapplication-navbutton-color" />
+        <meta name="theme-color" content="#FFBA21" />
+        <meta name="msapplication-navbutton-color" content="#FFBA21" />
+        <meta content="#FFBA21" name="msapplication-navbutton-color" />
         <meta content="yes" name="apple-mobile-web-app-capable" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta content="black-translucent" name="apple-mobile-web-app-status-bar-style" />
