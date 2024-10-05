@@ -18,7 +18,7 @@ const ServiceSingle = ({ params }) => {
   console.log("mainItem", mainItem);
 
   return (
-    <div className="w-full py-10 md:py-[100px] px-5 md:px-0">
+    <div className="w-full py-[70px] md:py-[100px] px-5 md:px-0">
       <div className="container flex flex-col gap-10">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-between">
           <div className="col-span-1 flex flex-col gap-2">
