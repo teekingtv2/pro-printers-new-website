@@ -117,7 +117,7 @@ const Navbar = () => {
                   <AiOutlineClose size={25} />
                 </div>
               </div>
-              <div className="border-b border-gray-300 my-5">
+              <div className="border-b border-gray-300 my-6">
                 <p className=" py-2 text-[#0047ab] leading-3 font-semibold">
                   Pro Printers Agency LTD
                 </p>
@@ -168,19 +168,19 @@ const Navbar = () => {
                 <div className="flex items-center justify-center gap-5 my-4 w-full sm:w-[80%] text-gray-900">
                   <Link
                     href="https://x.com/"
-                    className="rounded-full shadow-md shadow-gray-900 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
+                    className="rounded-full shadow-md shadow-gray-900 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
                   >
                     <FaTwitter />
                   </Link>
                   <Link
                     href="https://instagram.com/"
-                    className="rounded-full shadow-md shadow-gray-500 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
+                    className="rounded-full shadow-md shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
                   >
                     <FaInstagram />
                   </Link>
                   <Link
                     href="https://facebook.com/"
-                    className="rounded-full shadow-md shadow-gray-500 p-2 cursor-pointer hover:scale-110 ease-in duration-300"
+                    className="rounded-full shadow-md shadow-gray-500 p-3 cursor-pointer hover:scale-110 ease-in duration-300"
                   >
                     <FaFacebook />
                   </Link>
