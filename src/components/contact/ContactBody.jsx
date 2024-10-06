@@ -98,7 +98,7 @@ const ContactBody = () => {
           </div>
           <div className="col-span-1 p-5 rounded-lg ">
             <img
-              src="/images/vectors/support-2.png"
+              src="/images/contact2.png"
               className="w-[80%] text-center dancingSlide"
               alt={process.env.APP_NAME}
             />

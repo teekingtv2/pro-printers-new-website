@@ -20,26 +20,23 @@ const ServiceSingle = ({ params }) => {
   return (
     <div className="w-full py-[70px] md:py-[100px] px-5 md:px-0">
       <div className="container flex flex-col gap-10">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10 justify-between">
-          <div className="col-span-1 flex flex-col gap-2">
+        <div className="grid grid-cols-1 md:grid-cols-8 gap-10 justify-between">
+          <div className="col-span-3 flex flex-col gap-2">
             <img
               src={`/images/services/${mainItem.img}`}
               alt=""
               className="rounded-xl mb-3 w-[85%] md:w-[90%] mx-auto md:mx-0 max-h-[300px] md:max-h-full"
             />
           </div>
-          <div className="col-span-1 flex flex-col gap-2">
+          <div className="col-span-3 flex flex-col gap-2">
             <p className="text-[13px] mb-[-7px] uppercase text-[#666]">
               {parentItem.title}
             </p>
             <h2 className="text-[17px] font-medium leading-[1.8rem]">
-              {mainItem.name}
+              {mainItem.descTitle}
             </h2>
             <p className="text-[13px] mb-[20px] text-[#666]">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae et
-              adipisci consectetur unde fugit quos voluptates placeat odit?
-              Nisi, voluptate dolorum dolor laboriosam recusandae voluptatem
-              error perferendis non quisquam sit?
+              {mainItem.description}
             </p>
             <Link
               href={{
@@ -56,12 +53,12 @@ const ServiceSingle = ({ params }) => {
           </div>
           <Link
             href="/contact"
-            className="col-span-1 flex flex-col items-center gap-2"
+            className="col-span-2 flex flex-col items-center gap-2 mx-auto"
           >
             <img
               src={`/images/services/no-product.png`}
               alt=""
-              className="rounded-xl mb-3 max-w-[230px] max-h-[350px]"
+              className="rounded-xl mb-3 max-w-[230px] max-h-[350px] mx-auto"
             />
             {/* <img
               src={`/images/services/request.webp`}
