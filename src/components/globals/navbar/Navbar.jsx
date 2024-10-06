@@ -105,7 +105,7 @@ const Navbar = () => {
               <div className="flex w-full justify-between items-center">
                 <Link href="/">
                   <img
-                    src="/images/logo.png"
+                    src="/images/logo-2.png"
                     alt={`${process.env.APP_NAME}`}
                     width="110"
                     height="35"

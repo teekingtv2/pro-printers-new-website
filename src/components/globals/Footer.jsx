@@ -36,22 +36,22 @@ const Footer = () => {
           </Link>
         </div>
         <div className="col-span-1 social-icon flex gap-2 justify-center md:justify-end">
-          <Link href="https://www.twitter.com/globaltriumphng">
+          <Link href="">
             <span>
               <FaTwitter />
             </span>
           </Link>
-          <Link href="https://www.youtube.com/@globaltriumphng">
+          <Link href="">
             <span>
               <FaYoutube />
             </span>
           </Link>
-          <Link href="https://www.facebook.com/globaltriumphng">
+          <Link href="http://www.facebook.com/proprintersagency">
             <span>
               <FaFacebook />
             </span>
           </Link>
-          <Link href="https://www.instagram.com/globaltriumphng">
+          <Link href="http://www.instagram.com/proprintersagency">
             <span>
               <FaInstagram />
             </span>

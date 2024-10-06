@@ -21,8 +21,8 @@ export const menuItems = [
     ],
   },
   {
-    title: 'Banner/Stickers',
-    link: 'banner-stickers',
+    title: 'Large Format & OOH Print',
+    link: 'large-format-ooh-print',
     img: 'banner-stickers.png',
     children: [
       {
