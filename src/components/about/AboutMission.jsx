@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import React from 'react';
-import { FaArrowUp } from 'react-icons/fa';
+import Link from "next/link";
+import React from "react";
+import { FaArrowUp } from "react-icons/fa";
 
 const AboutMission = () => {
   return (
@@ -39,30 +39,33 @@ const AboutMission = () => {
           />
         </div>
         <div className="col-span-1 flex flex-col items-start justify-end gap-5 self-end animate__slower animate__animated animate__zoomIn animate__delay-2s">
-          <p className="uppercase font-semibold text-[14px] text-[#0047AB]">Vision Statement</p>
+          <p className="uppercase font-semibold text-[14px] text-[#0047AB]">
+            Vision Statement
+          </p>
           <h1 className="text-[#000] text-[38px] font-semibold leading-[45px]">
             <span className="text-[#0047AB]">Mission </span> statements
           </h1>
           <div className="flex flex-col gap-3 text-[14px]">
             <p>
-              To become the leading provider of innovative and high-quality custom gift item
-              branding solutions in Nigeria.
+              To become the leading provider of innovative and high-quality
+              custom gift item branding solutions in Nigeria.
             </p>
             <p>
-              Empowering businesses and individuals to express their identity through creative,
-              durable, and impactful designs.
+              Empowering businesses and individuals to express their identity
+              through creative, durable, and impactful designs.
             </p>
             <p>
-              We aim to set the standard for excellence in personalized branding, driven by advanced
-              technology, exceptional customer service, and a commitment to helping our clients make
-              a lasting impression.
+              We aim to set the standard for excellence in personalized
+              branding, driven by advanced technology, exceptional customer
+              service, and a commitment to helping our clients make a lasting
+              impression.
             </p>
           </div>
           <Link
-            href=""
+            href="/contact"
             className="btnn primaryBtnn font-bold flex gap-2 justify-center items-center w-[max-content]"
           >
-            <span>Check Our Projects</span>
+            <span>Get in Touch</span>
             <FaArrowUp />
           </Link>
         </div>

@@ -36,6 +36,16 @@ const Footer = () => {
           </Link>
         </div>
         <div className="col-span-1 social-icon flex gap-2 justify-center md:justify-end">
+          <Link href="http://www.instagram.com/proprintersagency">
+            <span>
+              <FaInstagram />
+            </span>
+          </Link>
+          <Link href="http://www.facebook.com/proprintersagency">
+            <span>
+              <FaFacebook />
+            </span>
+          </Link>
           <Link href="">
             <span>
               <FaTwitter />
@@ -44,16 +54,6 @@ const Footer = () => {
           <Link href="">
             <span>
               <FaYoutube />
-            </span>
-          </Link>
-          <Link href="http://www.facebook.com/proprintersagency">
-            <span>
-              <FaFacebook />
-            </span>
-          </Link>
-          <Link href="http://www.instagram.com/proprintersagency">
-            <span>
-              <FaInstagram />
             </span>
           </Link>
         </div>
